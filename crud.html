@@ -12,6 +12,36 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="my.css">
 
+    <script>
+        window.onload = function () {
+            let books = [
+                {   id:228261, 
+                    title: "해리포터와 마법사의 돌",
+                    genre: "판타지",
+                    author: "J.K. Rowling",
+                    publisher: "문학수첩",
+                    status: "대여 가능"
+                },
+                {
+                    id: 336282,
+                    title: "어린왕자",
+                    genre: "소설",
+                    author: "Antoine de Saint-Exupery",
+                    publisher: "열린책들",
+                    status: "대여 가능"
+                },
+                {
+                    id: 927272,
+                    title: "데미안",
+                    genre: "소설",
+                    author: "Hermann Hesse",
+                    publisher: "민음사",
+                    status: "대여 중"
+                }
+            ];
+        };
+    </script>
+
 </head>
 
 <body>
@@ -100,12 +130,12 @@
         <div class="mt-5">
             <h2>도서 목록</h2>
             <p>현재 등록된 도서 목록입니다.</p>
-            <div id="bookList">
-            </div>
+            <ul id="bookList">
+            </ul>
         </div>
     </main>
-
-    <footer>
+ 
+    <footer>    
         <p class="text-center text-body-secondary">
             Book Management System © 2026
         </p>
