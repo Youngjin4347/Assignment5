@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    min-height: 500px; 
+}
+
+nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+header > .container {
+    margin-top: 80px;
+}
+
+header h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+header p {
+    color: #6c757d;
+}
+
+form {
+    max-width: 700px;
+}
+
+form .form-label {
+    font-weight: 500;
+}
+
+input.form-control {
+    padding: 10px;
+}
+
+select.form-select {
+    padding: 10px;
+}
+
+
+.btn {
+    margin-right: 5px;
+}
+
+.table {
+    margin-top: 25px;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.book-link {
+    color: #5606be;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.book-detail-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-detail-card .card-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.book-info {
+    padding: 15px 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.book-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.book-info p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.book-buttons {
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .book-detail-card {
+        max-width: 100%;
+    }
+
+    .book-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
