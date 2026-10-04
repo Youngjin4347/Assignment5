@@ -63,7 +63,7 @@
 
                 deleteBtn.addEventListener("click", function () {
                     if (confirm("정말 삭제하시겠습니까?")) {
-                        books.splice(i, 1);
+                        books.splice(i, 1);     
                         showBooks();
                     }
 
@@ -97,13 +97,13 @@
             addBtn.addEventListener("click", function () {
 
                 let bookId = document.querySelector("#bookId").value;
-                let title = document.querySelector("#title").value;
-                let genre = document.querySelector("#genre").value;
-                let author = document.querySelector("#author").value;
-                let publisher = document.querySelector("#publisher").value;
-                let status = document.querySelector("#status").value;
+                let bookTitle = document.querySelector("#title").value;
+                let bookGenre = document.querySelector("#genre").value;
+                let bookAuthor = document.querySelector("#author").value;
+                let bookPublisher = document.querySelector("#publisher").value;
+                let bookStatus = document.querySelector("#status").value;
 
-                if (!bookId || !title || !genre || !publisher) {
+                if (!bookId || !bookTitle || !bookGenre || !bookPublisher) {
                     alert("도서 ID, 도서명, 장르, 출판사는 필수 입력 항목입니다.");
                     return;
                 }
@@ -122,21 +122,21 @@
 
                     books.push({
                         id: parseInt(bookId),
-                        title: title,
-                        genre: genre,
-                        author: author,
-                        publisher: publisher,
-                        status: status
+                        title: bookTitle,
+                        genre: bookGenre,
+                        author: bookAuthor,
+                        publisher: bookPublisher,
+                        status: bookStatus
                     });
                 }
 
                 else {
                     books[updateIndex].id = parseInt(bookId);
-                    books[updateIndex].title = title;
-                    books[updateIndex].genre = genre;
-                    books[updateIndex].author = author;
-                    books[updateIndex].publisher = publisher;
-                    books[updateIndex].status = status;
+                    books[updateIndex].title = bookTitle;
+                    books[updateIndex].genre = bookGenre;
+                    books[updateIndex].author = bookAuthor;
+                    books[updateIndex].publisher = bookPublisher;
+                    books[updateIndex].status = bookStatus;
 
                     updateIndex = -1;
                 }
