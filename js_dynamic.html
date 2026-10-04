@@ -7,23 +7,23 @@
     <title>Document</title>
 
     <script>
-        window.addEventListener("load",function(){
+        window.addEventListener("load", function () {
             const fruit = document.querySelector("#fruit");
             const addbtn = document.querySelector("#addbtn");
             const list = document.querySelector("#list");
 
 
-            addbtn.addEventListener("click",function(){
+            addbtn.addEventListener("click", function () {
                 let flist = fruit.value.split(",");
-                for(let i=0; i<flist.length; i++){
+                for (let i = 0; i < flist.length; i++) {
                     let newLi = document.createElement("li");
                     newLi.textContent = flist[i];
                     list.appendChild(newLi);
-                    
+
                     let deleteBtn = document.createElement("button");
                     deleteBtn.textContent = "삭제";
                     newLi.appendChild(deleteBtn);
-                    deleteBtn.addEventListener("click",function(){
+                    deleteBtn.addEventListener("click", function () {
                         list.removeChild(newLi);
                     })
                 }
@@ -53,7 +53,7 @@
 
     <form>
         <input type="text" id="num1" name="num1" size="2" />
-        <button type="button"  id="add">+</button>
+        <button type="button" id="add">+</button>
         <input type="text" id="num2" name="num2" size="2">
         =
         <input type="text" id="result" name="result" size="2" readonly>
@@ -62,7 +62,7 @@
     </form>
 
 
-    
+
 
 
 </body>
@@ -71,11 +71,24 @@
 
 <script>
 
-        function clickMe() {
-            const btn = document.querySelector("#clickBtn");
-            btn.innerText = "Clicked!";
-            btn.style.color = "green";
-            btn.style.backgroundColor = "yellow";
-        }
+    const addBtn = document.getElementById("add");
 
-    </script>
+    addBtn.addEventListener("click", add);
+
+    function add() {
+
+        const num1 = document.querySelector("#num1");
+        const num2 = document.querySelector("#num2");
+        const result = parseFloat(num1.value) + parseFloat(num2.value);
+
+        document.querySelector("#result").value = result;
+    }
+
+    function clickMe() {
+        const btn = document.querySelector("#clickBtn");
+        btn.innerText = "Clicked!";
+        btn.style.color = "green";
+        btn.style.backgroundColor = "yellow";
+    }
+
+</script>
