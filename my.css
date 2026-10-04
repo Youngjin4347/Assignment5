@@ -71,58 +71,6 @@ select.form-select {
     margin-top: 25px;
 }
 
-.table th {
-    text-align: center;
-}
-
-.table td {
-    vertical-align: middle;
-}
-
-.book-link {
-    color: #5606be;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.book-link:hover {
-    text-decoration: underline;
-}
-
-.card {
-    margin-top: 20px;
-}
-
-.book-detail-card {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.book-detail-card .card-header {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.book-info {
-    padding: 15px 10px;
-    border-bottom: 1px solid #dee2e6;
-}
-
-.book-info strong {
-    display: block;
-    margin-bottom: 5px;
-    color: #495057;
-}
-
-.book-info p {
-    margin-bottom: 0;
-    font-size: 17px;
-}
-
-.book-buttons {
-    margin-top: 25px;
-}
-
 footer {
     margin-top: 60px;
     padding-top: 20px;
