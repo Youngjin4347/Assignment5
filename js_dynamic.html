@@ -39,9 +39,43 @@
     <input type="text" id="fruit" placeholder="과일을 입력하세요">
     <button id="addbtn">Add</button>
     <ul id="list"></ul>
+
+
+    <!--클릭버튼 실습-->
+    <button id="clickBtn" onclick="clickMe()">Click Me </button>
+
+
+
+
+
+    <!--계산기 실습-->
+    <h1>덧셈 계산기</h1>
+
+    <form>
+        <input type="text" id="num1" name="num1" size="2" />
+        <button type="button"  id="add">+</button>
+        <input type="text" id="num2" name="num2" size="2">
+        =
+        <input type="text" id="result" name="result" size="2" readonly>
+        <br><br>
+        <input type="reset" value="초기화">
+    </form>
+
+
     
 
 
 </body>
 
 </html>
+
+<script>
+
+        function clickMe() {
+            const btn = document.querySelector("#clickBtn");
+            btn.innerText = "Clicked!";
+            btn.style.color = "green";
+            btn.style.backgroundColor = "yellow";
+        }
+
+    </script>
